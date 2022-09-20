@@ -1,0 +1,2 @@
+# engineering_experiment_programming_contest_2022
+２年次前期工学実験でラズパイを用いた作品を発表するラズパイコンテスト用のリポジトリ
