@@ -1,16 +1,20 @@
-from unittest import result
+
 import cv2
 from deepface import DeepFace
+import numpy as np
+
 
 cap = cv2.VideoCapture(0)
 
-while cap.isOpened() :
+while True :
     ret, frame = cap.read()
-    result = DeepFace.analyze(frame,actions=['emotion'])
-    cv2.imshow('frame',frame)
-    print(result)
-    if cv2.waitKey(1) & 0xFF == ord('q'):
-        break
+    if(frame.size!=0):
+        result_ = DeepFace.analyze(frame,actions=['emotion'])
+        cv2.imshow('frame',frame)
+        print(result_["dominant_emotion"])
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+    else:print("test")
 
 cap.release()
 cv2.destroyAllWindows()
