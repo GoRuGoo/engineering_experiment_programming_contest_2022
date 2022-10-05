@@ -13,6 +13,7 @@ gp_out = 18
 GPIO.setup(gp_out, GPIO.OUT)
 left = GPIO.PWM(gp_out, 50)
 left.start(0.0)
+print(type(left))
 
 
 bot = 2.5
