@@ -3,7 +3,7 @@ import time
 import RPi.GPIO as GPIO
 
 
-class EasyServo:
+class EasilyUseServoClass:
     """A class that makes working with servos easier."""
 
     def __init__(self, servo_pin: int):
