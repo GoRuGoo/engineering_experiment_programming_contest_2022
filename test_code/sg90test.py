@@ -5,9 +5,7 @@ import wiringpi
 
 wiringpi.wiringPiSetupGpio()
 
-# サーボモータに接続したGPIO端子番号を指定
-servo_pin = 13
-# サーボモータを動かす角度を指定する
+servo_pin =18 
 sg90.sg90_set(servo_pin, 0)
 time.sleep(1)
 sg90.sg90_set(servo_pin, 90)
