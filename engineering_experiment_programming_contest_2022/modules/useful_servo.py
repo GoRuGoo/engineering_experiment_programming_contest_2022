@@ -6,7 +6,8 @@ import wiringpi
 
 class UsefulServoClass:
     def set_gpio(self, pin_num: int) -> None:
-        """Setting up the gyro.
+        """Setting up the gyro. initializeを使ってピン番号のセットアップしても良かったが、
+        毎回インスタンス建て替えないといけないのでメソッド化した。
 
         Args:
             pin_num(int):使いたいピン番号
