@@ -6,7 +6,8 @@ import wiringpi
 
 class UsefulServoClass:
     def set_gpio(self, pin_num: int) -> None:
-        """Setting up the gyro.
+        """Setting up the gyro. initializeを使ってピン番号のセットアップしても良かったが、
+        毎回インスタンス建て替えないといけないのでメソッド化した。
 
         Args:
             pin_num(int):使いたいピン番号
@@ -23,3 +24,83 @@ class UsefulServoClass:
         """
         sg90.sg90_set(self.servo_pin, degree)
         time.sleep(sec)
+
+    def move_many_times_servo(self) -> None:
+        """90度ずつサーボを何回も動かす(何回もメソッド呼ぶのがめんどくさいから)"""
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
+        sg90.sg90_set(self.servo_pin, 90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, -90)
+        time.sleep(0.3)
+        sg90.sg90_set(self.servo_pin, 90)
