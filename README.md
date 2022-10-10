@@ -16,13 +16,18 @@
 ### Installation&Usage
 
 1. リポジトリのclone
-```git clone https://github.com/GoRuGoo/engineering_experiment_programming_contest_2022.git```
+```
+git clone https://github.com/GoRuGoo/engineering_experiment_programming_contest_2022.git
+```
 2. chande directory
-```cd engineering_experiment_programming_contest_2022```
+```
+cd engineering_experiment_programming_contest_2022
+```
 3. run
-```python -m engineering_experiment_programming_contest_2022```
+```
+python -m engineering_experiment_programming_contest_2022
+```
 
 # おことわり
 
-ラズパイのスペックが悪い＆家のインターネットが悪かったためパワポの映像は
-テスト用コードを複数同時実行しています。すみません。
+ラズパイのスペックが悪い＆家のインターネットが悪かったためモジュールの設定がうまくできずパワポの映像はテスト用コードを複数同時実行しています。すみません。
