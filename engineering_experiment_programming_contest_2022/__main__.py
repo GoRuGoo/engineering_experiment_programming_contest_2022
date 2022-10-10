@@ -21,7 +21,7 @@ def main():
                 cap.release()
                 cv2.destroyAllWindows(0)
                 servo_instance.move_many_times_servo()
-                make_sound("suisei_amayakasi_trim.wav")
+                make_sound("statics/suisei_amayakasi_trim.wav")
                 sys.exit()
 
 
